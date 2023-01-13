@@ -1,17 +1,16 @@
-import React, { useState, useEffect } from 'react';
-import SearchBar from './SearchBar';
-import Category from './Category';
-import useStyles from './SearchBarstyles';
-import Cart from './Cart';
-import './Home.css';
-import Menu from './Menu';
-import data from './Data';
+import React, { useState, useEffect } from "react";
+import SearchBar from "./SearchBar";
+import Category from "./Category";
+import "./Home.css";
+import Menu from "./Menu";
+import data from "./Data";
+import Navbar from "./Navbar";
 
 const allCatValues = [...new Set(data.map((curElem) => curElem.category))];
 
 function Home() {
   const [state, setState] = useState(data);
-  const [inputSearch, setInputSearch] = useState('');
+  const [inputSearch, setInputSearch] = useState("");
 
   const catItems = allCatValues;
 
@@ -33,18 +32,12 @@ function Home() {
   };
   useEffect(() => {
     applyFilters();
-  }, [inputSearch]);
+  }, []);
 
-  const classes = useStyles();
   return (
     <div>
-      <div className={classes.head}>
-        <div> MedList</div>
-        <div>
-          <Cart />
-        </div>
-      </div>
-      <SearchBar inputSearch={inputSearch} changeInput={changeInput} />
+      <Navbar />
+      <SearchBar inputSearch={applyFilters} changeInput={changeInput} />
       <Category filterMenu={filterMenu} catItems={catItems} />
       <Menu items={state} />
     </div>

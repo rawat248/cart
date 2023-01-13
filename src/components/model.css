@@ -1,7 +1,11 @@
-.cart {
-  max-width: 30rem;
-  background-color: #313131;
-  color: white;
+.cartone {
+  color: black;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.carthead {
+  text-align: center;
 }
 
 .cart h2 {
@@ -17,7 +21,7 @@
 
 .item {
   margin: 1rem 0;
-  background-color: #575757;
+  background-color: whitesmoke;
   padding: 1rem;
 }
 
@@ -61,7 +65,7 @@
 }
 
 .actions button {
-  background-color: transparent;
+  background-color: skyblue;
   border: 1px solid white;
   margin-left: 0.5rem;
   padding: 0.15rem 1rem;

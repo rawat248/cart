@@ -1,6 +1,6 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import useStyles from './SearchBarstyles';
+import React from "react";
+import PropTypes from "prop-types";
+import useStyles from "./SearchBarstyles";
 
 function SearchBar({ inputSearch, changeInput }) {
   const classes = useStyles();
@@ -12,10 +12,13 @@ function SearchBar({ inputSearch, changeInput }) {
             type="text"
             className={classes.searchTerm}
             placeholder="Search for medicine"
-            value={inputSearch}
             onChange={changeInput}
           />
-          <button type="submit" className={classes.searchButton}>
+          <button
+            type="submit"
+            className={classes.searchButton}
+            onClick={inputSearch}
+          >
             Search
           </button>
         </div>

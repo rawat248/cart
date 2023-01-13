@@ -1,27 +1,20 @@
-import React from 'react';
-import './Menu.css';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
+import ProductItem from "./ProductItem";
+import "./Menu.css";
 
 function Menu({ items }) {
   return (
-    <div className="row">
-      {items.map((item) => (
-        <div className="product-card-container">
-          <div className="product-card">
-            <img src={item.image} alt="" />
-            <div className="product-card-body">
-              <h1>{item.title}</h1>
-              <span className="price">
-                Rs.
-                {item.price}
-              </span>
-              <p className="description">{item.description}</p>
-              <button className="btn" type="submit">
-                Add to cart
-              </button>
-            </div>
-          </div>
-        </div>
+    <div className="section">
+      {items.map((product) => (
+        <ProductItem
+          key={product.id}
+          id={product.id}
+          title={product.title}
+          price={product.price}
+          description={product.description}
+          image={product.image}
+        />
       ))}
     </div>
   );

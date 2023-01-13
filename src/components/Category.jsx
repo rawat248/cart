@@ -1,8 +1,8 @@
-import React from 'react';
-import Button from '@mui/material/Button';
-import Stack from '@mui/material/Stack';
-import PropTypes from 'prop-types';
-import useStyles from './Categorystyles';
+import React from "react";
+import Button from "@mui/material/Button";
+import Stack from "@mui/material/Stack";
+import PropTypes from "prop-types";
+import useStyles from "./Categorystyles";
 
 function Category({ filterMenu, catItems }) {
   const classes = useStyles();
@@ -16,7 +16,6 @@ function Category({ filterMenu, catItems }) {
               <Button
                 type="submit"
                 variant="contained"
-                size="medium"
                 onClick={() => filterMenu(curElem)}
               >
                 {curElem}

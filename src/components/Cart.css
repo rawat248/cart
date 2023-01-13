@@ -1,26 +1,26 @@
 .button {
-    background-color: transparent;
-    color: #721ad1;
-    border: none;
+  background-color: transparent;
+  color: #721ad1;
+  border: none;
+  margin-right: 50px;
 }
 
 .button:hover,
 .button:active {
-    color: rgb(219, 9, 9);
+  color: rgb(219, 9, 9);
 }
 
 .badge {
-    background-color: #1ad1b9;
-    border-radius: 30px;
-    padding: 0.15rem 1.25rem;
-    color: #1d1d1d;
-
+  background-color: #1ad1b9;
+  border-radius: 30px;
+  padding: 0.15rem 1.25rem;
+  color: #1d1d1d;
 }
 
 .icon {
-    display: flex;
+  display: flex;
 }
 
 .cart {
-    color: white;
+  color: white;
 }

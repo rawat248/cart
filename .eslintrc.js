@@ -3,27 +3,22 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: [
-    'plugin:react/recommended',
-    'airbnb',
-  ],
-  overrides: [
-  ],
+  extends: ["plugin:react/recommended", "airbnb"],
+  overrides: [],
   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
+    ecmaVersion: "latest",
+    sourceType: "module",
   },
-  plugins: [
-    'react',
-
-  ],
+  plugins: ["react"],
   rules: {
-    'linebreak-style': 0,
-    quotes: ['error', 'single'],
-    semi: ['error', 'always'],
-    'no-unused-vars': ['error', { vars: 'all', args: 'after-used', ignoreRestSiblings: false }],
-    'no-tabs': 0,
-    'no-param-reassign': 0,
-
+    "linebreak-style": 0,
+    quotes: ["error", "double"],
+    semi: ["error", "always"],
+    "no-unused-vars": [
+      "error",
+      { vars: "all", args: "after-used", ignoreRestSiblings: false },
+    ],
+    "no-tabs": 0,
+    "no-param-reassign": 0,
   },
 };

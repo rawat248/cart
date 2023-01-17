@@ -2,6 +2,8 @@
   color: black;
   margin-top: 50px;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .carthead {
@@ -50,6 +52,7 @@
 .price {
   font-size: 1.5rem;
   font-weight: bold;
+  text-align: center;
 }
 
 .itemprice {
@@ -76,4 +79,39 @@
 .actions button:active {
   background-color: #4b4b4b;
   color: white;
+}
+
+.totalprice {
+  width: 30%;
+  height: 100vh;
+  background-color: whitesmoke;
+}
+
+.total {
+  text-align: center;
+  font-weight: bold;
+}
+
+.mrp {
+  margin-top: 10px;
+  height: 30px;
+}
+
+.shipping {
+  margin-bottom: 10px;
+}
+
+.proceed {
+  margin-top: 1rem;
+  margin-left: 9rem;
+  background-color: skyblue;
+  border: none;
+  color: white;
+  width: 100px;
+  height: 40px;
+  border-radius: 1px;
+}
+
+.payment {
+  margin-top: 40px;
 }
